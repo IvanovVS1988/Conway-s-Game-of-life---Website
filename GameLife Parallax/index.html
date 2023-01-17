@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Conway's Game of Life</title>
+        <link rel="stylesheet" href="style.css">      
+    </head>
+    <body id="parallaxeffect">
+        <header>
+            <h1>Conway's Game of Life</h1>
+            <ul class="menu-main">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Wikipedia article</a></li>
+            </ul>
+        </header>
+        <main>
+            <section id="main-content">
+                <article id="manual">
+                    <h2>Manual</h2>
+                    <ol>
+                        <li>Set the starting position on the playing field by clicking on the cells</li>
+                        <li>Press button "Start"</li>
+                    </ol>
+                </article>    
+                <canvas id="gamefield" width="600" height="600"></canvas>
+                <article>
+                    <h2>Overview</h2>
+                    <p> The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. 
+                        It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by 
+                        creating an initial configuration and observing how it evolves. It is Turing complete and can simulate a universal constructor or any other Turing machine.
+                    <br/><br/><img src="example.gif" id="example-img"></p>
+                </article>              
+            </section>
+            <section id="control-content">
+                <div>
+                    <button id="start">Start</button>                                        
+                    <article>
+                        <p>Step number: <span id = "count">0</span></p>
+                    </article> 
+                </div>    
+            </section>
+        </main>
+        <script src="parallax.js"></script>
+        <script src="gameModel.js" defer></script>
+    </body>
+</html>
